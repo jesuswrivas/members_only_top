@@ -1,12 +1,38 @@
-
-// Flash cards styling
-
-.flash-notice{
+.custom-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #e6e6e6;
    
-    
+    min-width: 350px;
+    padding: 1rem;
 }
 
-.flash-alert{
-   
-    
+.custom-card__body form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 }
+
+.card__label{
+    font-weight: 500;
+}
+
+.card__info{
+    font-size: 0.65rem;
+}
+
+.card__field input:hover { 
+    box-shadow: 0 0 0 3px #c8f3fa,0 2px 2px rgba(15,17,17,.15) inset;
+}
+
+.custom-card__body__actions input{
+    background-color: #FCD200;
+    border: 1px solid #e6c000;
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+
+
