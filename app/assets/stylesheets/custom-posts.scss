@@ -1,0 +1,47 @@
+// #NEW POST VIEW
+
+
+.custom-new-post-form form{
+    border: 1px solid #e6e6e6;
+    padding: 4rem;
+
+}
+
+
+.custom-new-post-form__body{
+    font-size: 1.5rem;
+}
+
+
+.custom-new-post-form__body textarea{
+    min-height: 300px;
+        
+}
+
+
+.custom-new-post-form__actions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-new-post-form__actions input {
+    width: auto;
+
+}
+
+.custom-post__label{
+    font-size: 1.1rem;
+    
+}
+
+.field_with_errors input{
+   width: 100%;
+   box-shadow: 0 0 0 3px rgba(255, 0, 0, 0.356);
+   
+}
+
+.field_with_errors textarea{
+    width: 100%;
+    box-shadow: 0 0 0 3px rgba(255, 0, 0, 0.356);
+ }
