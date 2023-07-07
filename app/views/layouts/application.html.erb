@@ -11,8 +11,12 @@
   </head>
 
   <body>
-   <%= render partial: "shared/flash_messages" %>
+    <nav>
+      <%= render partial: "shared/navbar"%>
+    </nav>
 
-    <%= yield %>
+    <%= render partial: "shared/flash_messages" %>
+    
+    <main><%= yield %></main>
   </body>
 </html>
