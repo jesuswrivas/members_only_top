@@ -25,10 +25,17 @@ class PostsController < ApplicationController
 
 
   def show
+    @post = Post.find(params[:id])
 
-
+    # We increment the counter
+    @post.increment_view
   end
    
+
+  def index
+
+  end
+
 
   private
 

@@ -10,7 +10,7 @@ Rails.application.routes.draw do
     resources :posts, except: :show
   end
   
-  resources :users, only: [:show]
+  resources :posts, only: [:show]
 
 
 end

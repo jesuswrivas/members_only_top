@@ -1,0 +1,19 @@
+
+<div class= "custom-card-main ">
+
+    <div class="custom-card-main__title"> 
+        <%= link_to post.title, post_path(post.id)%>
+    </div>
+
+    <div class="custom-card-main__stats">
+        <div class= "custom-card-main__stats__item"> <%= post.created_at.strftime('%Y-%m-%d') %>
+</div>
+        <div class= "custom-card-main__stats__item"> <%= post.views%> views </div>                
+    </div>
+
+    <div class="custom-card-main__body"> 
+        <%= truncate(post.body, length: 400) %>
+    </div>
+
+</div>
+

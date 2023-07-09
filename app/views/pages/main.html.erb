@@ -1,2 +1,13 @@
-<h1>Pages#main</h1>
-<p>Find me in app/views/pages/main.html.erb</p>
+<div class="container-fluid w-50 mt-5">
+
+    <h1 class= "text-center mb-5">Welcome to Tennis Tribune</h1>
+   
+    
+    <div class="container custom-main-cards-container">
+        <% @latest_5_posts.each do |post|%>
+            <%= render partial: "shared/post-preview", locals: {post: post} %> <br>
+        <% end %>
+    </div>
+
+
+</div>
