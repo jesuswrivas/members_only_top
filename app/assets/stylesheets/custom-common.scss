@@ -23,11 +23,15 @@
     font-size: 0.65rem;
 }
 
+.card__field input{
+    width: 100%;
+}
+
 .card__field input:hover { 
     box-shadow: 0 0 0 3px #c8f3fa,0 2px 2px rgba(15,17,17,.15) inset;
 }
 
-.custom-card__body__actions input{
+.custom-card__body__actions input,button{
     background-color: #FCD200;
     border: 1px solid #e6c000;
     width: 100%;
@@ -44,4 +48,15 @@ body{
 
 body main{
     flex: 1;
+}
+
+
+// DEVISE
+.custom-devise-links{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
 }
