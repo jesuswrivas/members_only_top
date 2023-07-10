@@ -1,0 +1,28 @@
+<div class="container-fluid w-75">
+    <div class="custom-new-post-form">
+        <div class="custom-new-post-form__header">
+            <h1>Edit your post</h1>
+        </div>
+    
+    
+        <%= form_with model: [@user, @post] do |form|%>
+    
+            <div class="row custom-new-post-form__title">
+                <div class="custom-post__label"><%= form.label :title, "Title" %></div>
+                <%= form.text_field :title %>
+            </div>
+    
+            <div class="row custom-new-post-form__body">
+                <div class="custom-post__label"><%= form.label :body, "Post Content" %></div>
+                <%= form.text_area :body %>
+            </div>
+
+            <div class="row custom-new-post-form__actions">
+                <%= form.submit "Submit Post" %>
+            </div>
+    
+        <% end%>
+    
+    
+    </div>
+</div>

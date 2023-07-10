@@ -7,17 +7,17 @@
     
         <%= form_with model: [@user, @new_post] do |form|%>
     
-            <div class="row custom-new-post-form__title">
-                <div class="custom-post__label"><%= form.label :title, "Title" %></div>
-                <%= form.text_field :title %>
+            <div class="row custom-new-post-form__title mb-3">
+                
+                <%= form.text_field :title, placeholder: "Post Title" %>
             </div>
     
             <div class="row custom-new-post-form__body">
-                <div class="custom-post__label"><%= form.label :body, "Post Content" %></div>
-                <%= form.text_area :body %>
+                
+                <%= form.text_area :body, placeholder: "Write your Post" %>
             </div>
 
-            <div class="row custom-new-post-form__actions">
+            <div class="row custom-new-post-form__actions mt-3">
                 <%= form.submit "Submit Post" %>
             </div>
     

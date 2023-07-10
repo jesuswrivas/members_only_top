@@ -31,12 +31,20 @@
     box-shadow: 0 0 0 3px #c8f3fa,0 2px 2px rgba(15,17,17,.15) inset;
 }
 
-.custom-card__body__actions input,button{
+.custom-card__body__actions input {
     background-color: #FCD200;
     border: 1px solid #e6c000;
     width: 100%;
     border-radius: 0.5rem;
 }
+
+.custom-card__body__actions button{
+    background-color: #FCD200;
+    border: 1px solid #e6c000;
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
 
 body{
     display: flex;

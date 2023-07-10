@@ -36,9 +36,37 @@ class PostsController < ApplicationController
     
   end
    
-
   def index
+    @last_10_posts = current_user.posts.order(created_at: :desc).limit(10)
 
+  end
+
+  def edit
+    @user = current_user
+    @post = Post.find(params[:id])
+  end
+
+  def update
+    @post = Post.find(params[:id])
+   
+    if @post.update(post_params)
+      flash[:notice] = "The post was updated succesfully"
+    else
+      flash[:alert] = "Something went wrong. We couldnt update the post"
+    end
+    redirect_to user_posts_path(current_user.id)
+  end
+
+
+  def destroy
+    @post = Post.find(params[:id])
+   
+    ActiveRecord::Base.transaction do
+      @post.comments.destroy_all
+      @post.destroy
+      redirect_to user_posts_path(current_user.id)
+    end
+    
   end
 
 

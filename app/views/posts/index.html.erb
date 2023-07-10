@@ -1,0 +1,22 @@
+
+
+
+
+
+<div class="container-fluid w-50 mt-5 ">
+
+     <div class="row mb-5">
+         <div class="col text-center">
+            <h1>All your Posts</h1>
+         </div>
+     </div>
+
+    <div class="row">
+        <div class="col">
+            <%= render partial: "user-post-list",
+            locals:{posts: @last_10_posts}%>
+        </div>
+    </div>
+    
+    
+</div>
