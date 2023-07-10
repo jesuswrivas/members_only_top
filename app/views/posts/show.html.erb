@@ -13,14 +13,39 @@
             </div>
     
         </div>
-    
-    </div>
-    
-    
-    <div class="container-fluid">
 
-            <%= render partial: "comment-form",
-            locals: {post: @post, new_comment: @new_comment} %>
+        <div class="row">
+            <div class="col custom-comments-counter">
+            <% if @post.comments.count > 0%>
+                <%= @post.comments.count%> Comments
+            <% else %>
+                No comments yet. Leave us yours!
+
+            <% end %>
+            
+            </div>
         
+        </div>
+    
+    
+            
+        <div class="row">
+                <div class="col custom-form-comments">
+                    <%= render partial: "comment-form",
+                    locals: {post: @post, new_comment: @new_comment} %>
+                </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col custom-comments">
+                <%= render partial: "comments",
+                locals: {comments: @post.comments}%>
+            </div>
+
+        </div>
+
     </div>
+
+
 </div>

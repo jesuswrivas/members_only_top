@@ -24,11 +24,6 @@
 
 .custom-new-post-form__actions input {
     width: auto;
-
-}
-
-.custom-post__label{
-    font-size: 1.1rem;
     
 }
 
@@ -53,20 +48,56 @@
 
 .form-comments-main input, textarea{
     width: 100%;
-    border-bottom: none;
+    
 }
 
 .form-comments-main textarea{
     height: 100%;
     resize: none;
+    margin-top: 1rem;
+    border-bottom: none;
     
 }
 
-
 .form-comments-actions{
+    padding: 1rem;
     display: flex;
     justify-content: end;
     width: 100%;
     border: 1px solid black;
     border-top: none;
+}
+
+.form-comments-actions-button{
+    padding: 0.25rem 1rem;
+}
+
+
+
+.card-comment-name{
+    font-size: 0.85rem;
+}
+
+.card-comment-info{
+    font-size: 0.85rem;
+    color: rgb(153, 153, 153);
+}
+
+.custom-form-comments{
+    border-bottom: 1px solid gray;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+}
+
+.custom-comments{
+    padding-left: 5rem;
+}
+
+.custom-comments-counter{
+    padding-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 500;
+    border-bottom: 1px solid gray;
+    margin-bottom: 2rem;
+
 }

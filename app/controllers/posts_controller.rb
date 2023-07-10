@@ -28,11 +28,9 @@ class PostsController < ApplicationController
   def show
     @post = Post.find(params[:id])
     # We increment the counter
-    # @post.increment_view
+    @post.increment_view
 
-
-    
-    @new_comment = @post.comments.new
+        @new_comment = @post.comments.new
     
 
     

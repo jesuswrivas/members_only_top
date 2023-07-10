@@ -1,0 +1,20 @@
+
+<% comments.each do |comment|%>
+
+    <div class="card-comment mb-3">
+
+        <div class="card-comment-name">
+            <%= comment.guest_name %>
+        </div>
+        <div class="card-comment-info"> 
+            <% if comment.persisted? %>
+                <%= time_ago_in_words(comment.created_at) %> ago
+            <% end %>
+        </div>
+        <div class="card-comment-body">
+            <%= comment.body %>
+        </div>
+
+    </div>
+
+<% end %>
