@@ -17,6 +17,7 @@ class PostsController < ApplicationController
       redirect_to :root, notice: "Post created succesfully"
       
     else
+      
       flash.now[:alert] = "Something went wrong"
       render :new,  status: :unprocessable_entity 
     end
@@ -26,9 +27,15 @@ class PostsController < ApplicationController
 
   def show
     @post = Post.find(params[:id])
-
     # We increment the counter
-    @post.increment_view
+    # @post.increment_view
+
+
+    
+    @new_comment = @post.comments.new
+    
+
+    
   end
    
 

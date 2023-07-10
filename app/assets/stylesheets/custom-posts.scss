@@ -42,3 +42,31 @@
     width: 100%;
     box-shadow: 0 0 0 3px rgba(255, 0, 0, 0.356);
  }
+
+
+//  #Comments
+
+.form-comments-main-body{
+    padding: 0;
+    height: 100px;
+}
+
+.form-comments-main input, textarea{
+    width: 100%;
+    border-bottom: none;
+}
+
+.form-comments-main textarea{
+    height: 100%;
+    resize: none;
+    
+}
+
+
+.form-comments-actions{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    border: 1px solid black;
+    border-top: none;
+}

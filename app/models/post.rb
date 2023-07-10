@@ -9,8 +9,7 @@ class Post < ApplicationRecord
 
 
   def increment_view
-    self.views += 1
-    self.save!
+   self.increment!(:views)
   end
 
 
