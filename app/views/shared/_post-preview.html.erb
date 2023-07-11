@@ -6,9 +6,19 @@
     </div>
 
     <div class="custom-card-main__stats">
-        <div class= "custom-card-main__stats__item"> <%= post.created_at.strftime('%Y-%m-%d') %>
-</div>
-        <div class= "custom-card-main__stats__item"> <%= post.views%> views </div>                
+        <div class= "custom-card-main__stats__item"> 
+            <%= post.created_at.strftime('%Y-%m-%d') %>
+        </div>
+        <div class= "custom-card-main__stats__item"> 
+            <%= post.views%> views 
+        </div>          
+        <% if user_signed_in? %>
+            <div class= "custom-card-main__stats__item"> 
+                author: <%= post.user.user_name%>  
+            </div>        
+        <% end %>
+
+
     </div>
 
     <div class="custom-card-main__body"> 
